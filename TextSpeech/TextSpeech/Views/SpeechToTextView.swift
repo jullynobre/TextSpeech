@@ -11,12 +11,14 @@ import SwiftUI
 struct SpeechToTextView : View {
     @State private var name: String = "Your speech will appear here!"
     
+    let speechService = SpeechService(locale: .ptBR)
+    
     var body: some View {
         VStack {
             Text(name)
                 .font(.title)
                 .bold()
-                .padding(16)
+                .padding(16) 
                 .multilineTextAlignment(.center)
                 .lineLimit(nil)
             Spacer()
@@ -27,7 +29,13 @@ struct SpeechToTextView : View {
     }
     
     func recordButtonAction() {
-        self.name = "button tapped"
+        do {
+            try speechService.startRecording { (transcription) in
+                self.name = transcription
+            }
+        } catch {
+            print(error)
+        }
         print("Did Tap Recod Button")
     }
 }

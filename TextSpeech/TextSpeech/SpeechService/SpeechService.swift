@@ -20,7 +20,7 @@ class SpeechService {
         self.speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: locale.rawValue))
     }
     
-    func startRecording() throws {
+    func startRecording(completion: @escaping (String) -> Void) throws {
         if !self.requestAuthorization() {
             return
         }
@@ -40,6 +40,7 @@ class SpeechService {
         recognitionTask = speechRecognizer?.recognitionTask(with: request) { (result, _) in
             if let transcription = result?.bestTranscription {
                 print(transcription.formattedString)
+                completion(transcription.formattedString)
                 //self.textLabel.text = transcription.formattedString
             }
         }
