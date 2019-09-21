@@ -59,4 +59,12 @@ class SpeechService {
         return authorizer
     }
     
+    func speak(text: String) {
+        let utterance = AVSpeechUtterance(string: text)
+        utterance.voice = AVSpeechSynthesisVoice(language: "pt-BR")
+        utterance.rate = 0.1
+        
+        let synthesizer = AVSpeechSynthesizer()
+        synthesizer.speak(utterance)
+    }
 }
