@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		5749722B233572FB00D4796C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5749722A233572FB00D4796C /* AppDelegate.swift */; };
 		5749722D233572FB00D4796C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5749722C233572FB00D4796C /* SceneDelegate.swift */; };
-		5749722F233572FB00D4796C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5749722E233572FB00D4796C /* ContentView.swift */; };
+		5749722F233572FB00D4796C /* SpeechToTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5749722E233572FB00D4796C /* SpeechToTextView.swift */; };
 		57497231233572FB00D4796C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57497230233572FB00D4796C /* Assets.xcassets */; };
 		57497234233572FB00D4796C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57497233233572FB00D4796C /* Preview Assets.xcassets */; };
 		57497237233572FB00D4796C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57497235233572FB00D4796C /* LaunchScreen.storyboard */; };
 		57497242233572FB00D4796C /* TextSpeechTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57497241233572FB00D4796C /* TextSpeechTests.swift */; };
+		5749F264233583B7005398EC /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5749F263233583B7005398EC /* MainTabView.swift */; };
+		5749F26723358741005398EC /* TextToSpeechView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5749F26623358741005398EC /* TextToSpeechView.swift */; };
+		5749F26A233588F9005398EC /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5749F269233588F9005398EC /* SpeechService.swift */; };
+		5749F26C233589E9005398EC /* SpeechServiceEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5749F26B233589E9005398EC /* SpeechServiceEnums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +34,7 @@
 		57497227233572FB00D4796C /* TextSpeech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextSpeech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5749722A233572FB00D4796C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5749722C233572FB00D4796C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5749722E233572FB00D4796C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5749722E233572FB00D4796C /* SpeechToTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechToTextView.swift; sourceTree = "<group>"; };
 		57497230233572FB00D4796C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57497233233572FB00D4796C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		57497236233572FB00D4796C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +42,10 @@
 		5749723D233572FB00D4796C /* TextSpeechTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextSpeechTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57497241233572FB00D4796C /* TextSpeechTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSpeechTests.swift; sourceTree = "<group>"; };
 		57497243233572FB00D4796C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5749F263233583B7005398EC /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		5749F26623358741005398EC /* TextToSpeechView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeechView.swift; sourceTree = "<group>"; };
+		5749F269233588F9005398EC /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
+		5749F26B233589E9005398EC /* SpeechServiceEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechServiceEnums.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +87,11 @@
 		57497229233572FB00D4796C /* TextSpeech */ = {
 			isa = PBXGroup;
 			children = (
+				5749F268233588DE005398EC /* SpeechService */,
+				5749F265233586BC005398EC /* Views */,
 				5749722A233572FB00D4796C /* AppDelegate.swift */,
 				5749722C233572FB00D4796C /* SceneDelegate.swift */,
-				5749722E233572FB00D4796C /* ContentView.swift */,
+				5749F263233583B7005398EC /* MainTabView.swift */,
 				57497230233572FB00D4796C /* Assets.xcassets */,
 				57497235233572FB00D4796C /* LaunchScreen.storyboard */,
 				57497238233572FB00D4796C /* Info.plist */,
@@ -105,6 +115,24 @@
 				57497243233572FB00D4796C /* Info.plist */,
 			);
 			path = TextSpeechTests;
+			sourceTree = "<group>";
+		};
+		5749F265233586BC005398EC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5749722E233572FB00D4796C /* SpeechToTextView.swift */,
+				5749F26623358741005398EC /* TextToSpeechView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5749F268233588DE005398EC /* SpeechService */ = {
+			isa = PBXGroup;
+			children = (
+				5749F26B233589E9005398EC /* SpeechServiceEnums.swift */,
+				5749F269233588F9005398EC /* SpeechService.swift */,
+			);
+			path = SpeechService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,7 +238,11 @@
 			files = (
 				5749722B233572FB00D4796C /* AppDelegate.swift in Sources */,
 				5749722D233572FB00D4796C /* SceneDelegate.swift in Sources */,
-				5749722F233572FB00D4796C /* ContentView.swift in Sources */,
+				5749F26C233589E9005398EC /* SpeechServiceEnums.swift in Sources */,
+				5749722F233572FB00D4796C /* SpeechToTextView.swift in Sources */,
+				5749F26723358741005398EC /* TextToSpeechView.swift in Sources */,
+				5749F264233583B7005398EC /* MainTabView.swift in Sources */,
+				5749F26A233588F9005398EC /* SpeechService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

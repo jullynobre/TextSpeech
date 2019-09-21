@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  TextToSpeechView.swift
 //  TextSpeech
 //
 //  Created by Diuli Nobre on 20/09/19.
@@ -8,16 +8,16 @@
 
 import SwiftUI
 
-struct ContentView : View {
+struct TextToSpeechView : View {
     var body: some View {
-        Text("Hello World")
+        Text("Text To Speech View")
     }
 }
 
 #if DEBUG
-struct ContentView_Previews : PreviewProvider {
+struct TextToSpeechView_Previews : PreviewProvider {
     static var previews: some View {
-        ContentView()
+        TextToSpeechView()
     }
 }
 #endif
