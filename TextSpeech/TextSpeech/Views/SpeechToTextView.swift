@@ -11,20 +11,18 @@ import SwiftUI
 struct SpeechToTextView : View {
     @State private var name: String = "Your speech will appear here!"
     
-    private let recordButtonLabel = {() in
-        Text("Hello World")
-    }
-    
     var body: some View {
         VStack {
             Text(name)
                 .font(.title)
                 .bold()
                 .padding(16)
+                .multilineTextAlignment(.center)
                 .lineLimit(nil)
             Spacer()
-            Button(action: recordButtonAction, label: recordButtonLabel)
-                .padding(16)
+            Button(action: recordButtonAction) {
+                Image(systemName: "play.fill")
+            }.padding(16).imageScale(.large)
         }
     }
     
