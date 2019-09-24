@@ -10,7 +10,15 @@ import SwiftUI
 
 struct TextToSpeechView : View {
     var body: some View {
-        Text("Text To Speech View")
+        VStack{
+            Button(action: speakButtonAction) {
+                Image(systemName: "play.fill")
+            }.padding(16).imageScale(.large)
+        }.padding(.all)
+    }
+    
+    func speakButtonAction() {
+        print("Did Tap Speak Button")
     }
 }
 

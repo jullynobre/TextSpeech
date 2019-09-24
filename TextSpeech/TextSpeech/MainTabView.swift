@@ -10,11 +10,15 @@ import SwiftUI
 
 struct MainTabView : View {
     var body: some View {
-        TabbedView() {
-            SpeechToTextView()
-                .tabItemLabel(Text("Speech To Text")).tag(1)
-            TextToSpeechView()
-                .tabItemLabel(Text("Text To Speech")).tag(2)
+        TabView {
+            SpeechToTextView().tabItem {
+                Text("Write my Speech")
+                Image(systemName: "textbox")
+            }.tag(1)
+            TextToSpeechView().tabItem {
+                Text("Speech my Text")
+                Image(systemName: "text.bubble")
+            }.tag(2)
         }
     }
 }
