@@ -11,6 +11,8 @@ import SwiftUI
 struct TextToSpeechView : View {
     var body: some View {
         VStack{
+            TextView()
+            //Spacer()
             Button(action: speakButtonAction) {
                 Image(systemName: "play.fill")
             }.padding(16).imageScale(.large)

@@ -18,6 +18,7 @@
 		5749F26723358741005398EC /* TextToSpeechView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5749F26623358741005398EC /* TextToSpeechView.swift */; };
 		5749F26A233588F9005398EC /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5749F269233588F9005398EC /* SpeechService.swift */; };
 		5749F26C233589E9005398EC /* SpeechServiceEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5749F26B233589E9005398EC /* SpeechServiceEnums.swift */; };
+		576E946E2341016500F20C26 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576E946D2341016500F20C26 /* TextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		5749F26623358741005398EC /* TextToSpeechView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeechView.swift; sourceTree = "<group>"; };
 		5749F269233588F9005398EC /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
 		5749F26B233589E9005398EC /* SpeechServiceEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechServiceEnums.swift; sourceTree = "<group>"; };
+		576E946D2341016500F20C26 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			children = (
 				5749722E233572FB00D4796C /* SpeechToTextView.swift */,
 				5749F26623358741005398EC /* TextToSpeechView.swift */,
+				576E946D2341016500F20C26 /* TextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5749722B233572FB00D4796C /* AppDelegate.swift in Sources */,
+				576E946E2341016500F20C26 /* TextView.swift in Sources */,
 				5749722D233572FB00D4796C /* SceneDelegate.swift in Sources */,
 				5749F26C233589E9005398EC /* SpeechServiceEnums.swift in Sources */,
 				5749722F233572FB00D4796C /* SpeechToTextView.swift in Sources */,

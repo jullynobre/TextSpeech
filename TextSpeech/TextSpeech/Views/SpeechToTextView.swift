@@ -10,12 +10,13 @@ import SwiftUI
 
 struct SpeechToTextView : View {
     @State private var name: String = "Your speech will appear here!"
+    @State private var isRecording: Bool = false
     
     let speechService = SpeechService(locale: .ptBR)
     
     var body: some View {
         VStack {
-            Text(name)
+            Text("Your Speech Will Appear Here!")
                 .font(.title)
                 .bold()
                 .padding(16) 
@@ -24,7 +25,9 @@ struct SpeechToTextView : View {
             Spacer()
             Button(action: recordButtonAction) {
                 Image(systemName: "play.fill")
-            }.padding(16).imageScale(.large)
+            }
+            .padding(16)
+            .imageScale(.large)
         }
     }
     
