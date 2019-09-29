@@ -15,7 +15,7 @@ struct TextToSpeechView : View {
             //Spacer()
             Button(action: speakButtonAction) {
                 Image(systemName: "play.fill")
-            }.padding(16).imageScale(.large)
+            }.padding(16)
         }.padding(.all)
     }
     

@@ -19,16 +19,13 @@ struct SpeechToTextView : View {
             Text("Your Speech Will Appear Here!")
                 .font(.title)
                 .bold()
-                .padding(16) 
                 .multilineTextAlignment(.center)
                 .lineLimit(nil)
             Spacer()
             Button(action: recordButtonAction) {
                 Image(systemName: "play.fill")
-            }
-            .padding(16)
-            .imageScale(.large)
-        }
+            }.padding(16)
+        }.padding()
     }
     
     func recordButtonAction() {
